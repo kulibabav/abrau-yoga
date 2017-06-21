@@ -3,7 +3,6 @@ body {
   margin: 0;
   /*БЛОЧНАЯ МОДЕЛЬ*/
   padding: 0;
-  min-width: 1180px;
   /*ТЕКСТ*/
   font-family: Arial, sans-serif;
   font-weight: normal;
@@ -16,14 +15,7 @@ body {
   /*РАСПОЛОЖЕНИЕ*/
   margin: 0 auto;
   /*БЛОЧНАЯ МОДЕЛЬ*/
-  width: 1140px;
-}
-
-.container-narrow {
-  /*РАСПОЛОЖЕНИЕ*/
-  margin: 0 auto;
-  /*БЛОЧНАЯ МОДЕЛЬ*/
-  width: 800px;
+  width: 960px;
 }
 
 .clearfix:after {
@@ -48,33 +40,17 @@ body {
   height: 1px;
 }
 
-a {
-  /*ТЕКСТ*/
-}
-
-.btn {
-  /*РАСПОЛОЖЕНИЕ*/
-  /*ТЕКСТ*/
-  /*ОФОРМЛЕНИЕ*/
-}
-
-.btn:hover {
-  /*ОФОРМЛЕНИЕ*/
-}
-
-.btn:active {
-  /*ОФОРМЛЕНИЕ*/
-}
-
 /*HEADER*/
 
 header {
   position: fixed;
   width: 100%;
-  background: rgba(255,255,255,0.9);
-  font-size: 18px;
-  line-height: 30px;
   z-index: 10;
+}
+
+.header-contacts {
+  background: rgba(255,255,255,0.9);
+  line-height: 1.7em;
 }
 
 .header-address {
@@ -83,23 +59,46 @@ header {
 
 .header-phone {
   float: right;
-  font-size: 24px;
+  font-size: 1.5em;
+}
+
+.header-nav {
+  background: #333232;
+  opacity: 0.41;
+  box-shadow:
+    inset 0 0.23em 0.23em rgba(255,255,255,0.52),
+    inset 0 -0.23em 0.23em rgba(0,0,0,0.52),
+    0 0.28em 0.72em rgba(51,50,50,0.3);
+}
+
+.header-logo {
+  float: left;
+  color: white;
+  font-size: 2.8em;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.header-menu {
+  float: right;
 }
 
 /*INDEX*/
 
 section {
-  padding-top: 90px;
-  padding-bottom: 120px;
+  padding-top: 4em;
+  padding-bottom: 5em;
 }
 
 h2 {
   margin: 0;
-  padding: 10px 0;
-  margin-bottom: 52px;
+  margin-bottom: 1em;
   border-bottom: 1px solid black;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 2.8em;
+  line-height: 1.2em;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
@@ -107,43 +106,20 @@ h2 {
 
 .motto {
   position: relative;
-  padding-top: 542px;
-  padding-bottom: 140px;
+  padding-top: 30em;
+  padding-bottom: 7.7em;
   border-bottom: 1px solid black;
-  box-shadow: 0px 5px 13px rgba(0,0,0,0.36);
+  box-shadow: 0 0.28em 0.72em rgba(0,0,0,0.36);
   /*ОФОРМЛЕНИЕ*/
   background: url(../img/background-1.png) no-repeat 50% 50% fixed;
   background-size: cover;
 }
 
-.motto-line {
-  position: fixed;
-  top: 30px;
-  width: 100%;
-  background: #333232;
-  opacity: 0.41;
-  box-shadow:
-    inset 0px 4px 4px rgba(255,255,255,0.52),
-    inset 0px -4px 4px rgba(0,0,0,0.52),
-    0px 5px 13px rgba(51,50,50,0.3);
-  z-index: 10;
-}
-
-.motto-logo {
-  color: white;
-  font-size: 48px;
-  line-height: 50px;
-  vertical-align: middle;
-  text-transform: uppercase;
-  padding: 0;
-  font-weight: normal;
-}
-
 .motto b {
   display: block;
-  font-size: 65px;
+  font-size: 3.6em;
+  line-height: 1em;
   font-weight: normal;
-  line-height: 65px;
   text-align: center;
   background: rgba(255, 255, 255, 0.3);
 }
@@ -151,12 +127,12 @@ h2 {
 .motto::after {
   content:"";
   position: absolute;
-  bottom: -5px;
+  bottom: -0.28em;
   left: 50%;
   right: 50%;
   transform: translateX(-50%);
-  width: 52px;
-  height: 52px;
+  width: 3em;
+  height: 3em;
   background: url(../img/018-yoga-silhouette.png) no-repeat;
   background-size: cover;
 }
@@ -172,30 +148,32 @@ h2 {
 .space h2::before {
   content: "";
   position: absolute;
-  bottom: -15px;
+  bottom: -0.33em;
   left: 0;
-  width: 68px;
-  height: 68px;
+  width: 1.4em;
+  height: 1.4em;
   background: url(../img/019-yoga-silhouette.png) no-repeat;
   background-size: cover;
 }
 
 .space-gallery {
   margin-left: -30px;
-  font-size: 0;
-  line-height: 0;
+  text-align: center;
 }
 
 .space-gallery img {
   display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  overflow: hidden;
   margin-left: 30px;
   margin-bottom: 30px;
   outline: 1px solid white;
-  box-shadow: 0px 0px 13px rgba(50,50,50,0.5);
+  box-shadow: 0 0 0.72em rgba(50,50,50,0.5);
 }
 
 .space p {
-  margin-top: 20px;
+  margin-top: 1em;
 }
 
 .schedule {
@@ -203,7 +181,7 @@ h2 {
   background: url(../img/background-3.png) no-repeat 50% 50% fixed;
   background-size: cover;
   border-bottom: 1px solid black;
-  box-shadow: 0px 5px 13px rgba(0,0,0,0.36);
+  box-shadow: 0 0.28em 0.72em rgba(0,0,0,0.36);
 }
 
 .schedule h2 {
@@ -214,7 +192,7 @@ h2 {
 
 .schedule-changes {
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 3em;
   padding: 0;
   color: white;
   background: rgba(241,90,36,0.43);
@@ -235,8 +213,8 @@ h2 {
 .schedule-days label {
   display: block;
   margin-top: 1px;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 1.3em;
+  line-height: 1.71em;
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -261,8 +239,8 @@ h2 {
 
 .schedule-day {
   display: none;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 1em;
+  padding-bottom: 1.66em;
   background: rgba(255,255,255,0.33);
 }
 
@@ -301,10 +279,10 @@ input:checked + label {
 .team h2::before {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 68px;
-  height: 68px;
+  width: 1.3em;
+  height: 1.3em;
   background: url(../img/031-yoga-silhouette.png) no-repeat;
   background-size: cover;
 }
@@ -312,47 +290,50 @@ input:checked + label {
 .team-gallery {
   position: relative;
   border: 1px solid black;
-  font-size: 0;
-  line-height: 0;
-  padding-top: 23px;
-  margin-bottom: -30px;
+  padding-top: 16px;
+  margin-bottom: -0.3em;
 }
 
 .team-gallery-item {
   display: inline-block;
-  margin-left: 23px;
-  margin-bottom: 23px;
-  font-size: 18px;
-  line-height: 22px;
+  vertical-align: top;
+  width: 141px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
   cursor: pointer;
 }
 
 .team-gallery-item.director {
-  margin-right: 220px;
+  margin-right: 157px;
 }
 
 .team-gallery-item img {
   display: block;
+  width: 100%;
   outline: 1px solid white;
-  box-shadow: 0px 0px 13px rgba(50,50,50,0.5);
+  box-shadow: 0 0 0.72em rgba(50,50,50,0.5);
 }
 
 .team-gallery-item h3 {
   margin: 0;
-  padding: 10px 0;
+  padding: 0.5em 0;
   font-weight: normal;
   text-align: center;
 }
 
 .team-gallery-item p {
   margin: 0;
+  margin-top: -0.25em;
   padding: 0;
+  font-size: 0.7em;
+  line-height: 1em;
   font-style: italic;
   text-align: center;
 }
 
 .team-gallery-item:hover {
-  box-shadow: 0px 3px 13px rgba(50,50,50,0.5);
+  box-shadow: 0 0.28em 0.72em rgba(50,50,50,0.5);
 }
 
 .team-gallery-item:hover img {
@@ -363,10 +344,10 @@ input:checked + label {
 .team-gallery::after {
   content: "";
   position: absolute;
-  bottom: -90px;
+  bottom: -4.76em;
   right: 0;
-  width: 68px;
-  height: 68px;
+  width: 3.8em;
+  height: 3.8em;
   background: url(../img/033-yoga-silhouette.png) no-repeat;
   background-size: cover;
 }
@@ -378,26 +359,24 @@ input:checked + label {
 }
 
 .price h2 {
-  margin-top: -10px;
-  margin-bottom: 150px;
+  margin-top: -0.2em;
+  margin-bottom: 3em;
 }
 
 .instant-visit {
   float: left;
   position: relative;
-  width: 480px;
-  font-size: 24px;
-  line-height: 30px;
+  width: 380px;
 }
 
 .instant-visit::before {
   content: "";
   position: absolute;
-  top: -80px;
+  top: -4.5em;
   left: 50%;
   transform: translateX(-50%);
-  width: 63px;
-  height: 63px;
+  width: 3.5em;
+  height: 3.5em;
   border-bottom: 1px solid black;
   background: url(../img/017-yoga-silhouette.png) no-repeat;
   background-size: cover;
@@ -406,34 +385,35 @@ input:checked + label {
 .unlimited-visits {
   float: right;
   position: relative;
-  width: 480px;
-  font-size: 24px;
-  line-height: 30px;
+  width: 25em;
 }
 
 .unlimited-visits::before {
   content: "";
   position: absolute;
-  top: -80px;
+  top: -4.5em;
   left: 50%;
   transform: translateX(-50%);
-  width: 63px;
-  height: 63px;
+  width: 3.5em;
+  height: 3.5em;
   border-bottom: 1px solid black;
   background: url(../img/031-yoga-silhouette.png) no-repeat;
   background-size: cover;
 }
 
 .price h3 {
+  margin: 0;
+  margin-bottom: 0.6em;
+  padding: 0;
   text-transform: uppercase;
+  font-size: 1.7em;
+  line-height: 1em;
   font-weight: normal;
   text-align: center;
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .instant-visit h3 {
-  margin-bottom: 47px;
+  margin-bottom: 1.24em;
 }
 
 .instant-visit .price-value {
@@ -441,52 +421,57 @@ input:checked + label {
 }
 
 .price {
-  padding-bottom: 80px;
+  padding-bottom: 4.4em;
   border-bottom: 1px solid black;
-  box-shadow: 0px 5px 13px rgba(0,0,0,0.36);
+  box-shadow: 0 0.28em 0.72em rgba(0,0,0,0.36);
 }
 
 .price p {
   margin: 0;
   padding: 0;
-  padding-top: 3px;
+  padding-top: 0.18em;
   text-align: center;
 }
 
 .unlimited-visits-price {
-  margin-left: -140px;
+  margin-left: -7em;
 }
 
 .unlimited-visits-price th {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1em;
+  line-height: 1em;
   font-weight: normal;
 }
 
 .unlimited-visits-price td {
-  padding: 0 3px;
+  padding: 0 0.17em;
   color: #f15a24;
 }
 
 .unlimited-visits-price td:first-child {
   color: black;
-  font-size: 18px;
-  line-height: 22px;
+  width: 8.4em;
   text-align: right;
-  width: 140px;
-  padding-right: 13px;
+  padding-right: 0.7em;
 }
 
 .price .currency {
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .contacts-map {
   float: left;
+  width: 550px;
+}
+
+.contacts-map iframe {
+  display: block;
+  width: 100%;
+  height: 350px;
 }
 
 .contacts-description {
-  margin-left: 30px;
+  margin-left: 1.7em;
   float: left;
 }
 
@@ -494,18 +479,18 @@ input:checked + label {
 
 .social {
   position: relative;
-  margin-top: -35px;
-  margin-bottom: 50px;
+  margin-top: -2em;
+  margin-bottom: 2.8em;
 }
 
 .social::before {
   content: "";
   position: absolute;
-  top: -95px;
+  top: -4.28em;
   left: 50%;
   transform: translateX(-50%);
-  width: 66px;
-  height: 61px;
+  width: 3.6em;
+  height: 3.33em;
   border-bottom: 1px solid black;
   background: url(../img/001-yoga-silhouette.png) no-repeat;
   background-size: cover;
@@ -515,8 +500,6 @@ input:checked + label {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 0;
-  line-height: 0;
 }
 
 .social li {
@@ -524,21 +507,23 @@ input:checked + label {
   padding: 0;
   display: inline-block;
   vertical-align: top;
-  margin-left: 15px;
+  margin-left: 1em;
 }
 
 .social a {
   display: block;
-  width: 45px;
-  height: 45px;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .social-vk {
   background: url(../img/social-vk.png) no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .social-fb {
   background: url(../img/social-fb.png) no-repeat 50% 50%;
+  background-size: cover;
 }
 
 /*POPUPS*/
@@ -562,5 +547,82 @@ input:checked + label {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/*ADAPTIVE*/
+
+@media screen and (max-width: 980px) {
+
+  .hidden-under-980 {
+    display: block;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .container {
+    width: 600px;
+  }
+
+  .container-narrow {
+    width: 600px;
+  }
+
+  .space-gallery {
+    margin-left: -30px;
+  }
+
+  .space-gallery img {
+    width: 180px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .team-gallery {
+    padding-top: 12px;
+  }
+
+  .team-gallery-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 135px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    cursor: pointer;
+  }
+
+  .instant-visit {
+    float: none;
+    margin: 0 auto 130px;
+  }
+
+  .instant-visit h3 {
+    margin-bottom: 1em;
+  }
+
+  .unlimited-visits {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .contacts-map {
+    float: none;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .contacts-description {
+    float: none;
+    margin-left: 0;
+    margin-bottom: 40px;
   }
 }
