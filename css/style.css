@@ -1,21 +1,71 @@
+@font-face {
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Comfortaa-Light.woff) format("woff"), url(../fonts/Comfortaa-Light.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/SourceSansPro-Regular.woff) format("woff"), url(../fonts/SourceSansPro-Regular.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/SourceSansPro-Bold.woff) format("woff"), url(../fonts/SourceSansPro-Bold.woff2) format("woff2")
+}
+
 body {
   /*РАСПОЛОЖЕНИЕ*/
   margin: 0;
   /*БЛОЧНАЯ МОДЕЛЬ*/
   padding: 0;
   /*ТЕКСТ*/
-  font-family: Arial, sans-serif;
-  font-weight: normal;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 19px;
+  /*ОФОРМЛЕНИЕ*/
+  color: #323232;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+a {
+  /*ТЕКСТ*/
+  text-decoration: none;
 }
 
 .container {
   /*РАСПОЛОЖЕНИЕ*/
   margin: 0 auto;
   /*БЛОЧНАЯ МОДЕЛЬ*/
-  width: 960px;
+  width: 300px;
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+    padding: 0 34px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container {
+    width: 1050px;
+    padding: 0 50px;
+  }
 }
 
 .clearfix:after {
@@ -40,124 +90,226 @@ body {
   height: 1px;
 }
 
+.hide-320 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hide-320 {
+    display: block;
+  }
+
+  .hide-768 {
+    display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .hide-320 {
+    display: block;
+  }
+
+  .hide-768 {
+    display: block;
+  }
+
+  .hide-1150 {
+    display: none;
+  }
+}
+
 /*HEADER*/
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 10;
 }
 
 .header-contacts {
+  padding: 5px 0;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: black;
   background: rgba(255,255,255,0.9);
-  line-height: 1.7em;
 }
 
-.header-address {
-  float: left;
-}
+@media (min-width: 768) {
 
-.header-phone {
-  float: right;
-  font-size: 1.5em;
+  .header-contacts {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .header-address {
+    float: left;
+  }
+
+  .header-phone {
+    float: right;
+  }
 }
 
 .header-nav {
-  background: #333232;
-  opacity: 0.41;
+  padding: 4px 0 0;
+  background: #323232;
+  opacity: 0.4;
   box-shadow:
-    inset 0 0.23em 0.23em rgba(255,255,255,0.52),
-    inset 0 -0.23em 0.23em rgba(0,0,0,0.52),
-    0 0.28em 0.72em rgba(51,50,50,0.3);
+    inset 0 4px 4px rgba(255,255,255,0.5),
+    inset 0 -4px 4px rgba(0,0,0,0.5),
+    0 5px 13px rgba(50,50,50,0.3);
 }
 
 .header-logo {
-  float: left;
-  color: white;
-  font-size: 2.8em;
-  line-height: 1.1em;
-  text-transform: uppercase;
+  display: block;
+}
+
+.header-logo h1 {
   margin: 0;
-  padding: 0;
-  font-weight: normal;
+  font-family: "Comfortaa", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .header-menu {
+    float: left;
+  }
+
+  .header-logo h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .header-menu {
-  float: right;
+  display: none;
+  font-size: 0;
+  line-height: 0;
+}
+
+.header-menu a {
+  display: inline-block;
+  padding: 0 18px;
+  border-right: 1px solid white;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.header-menu a:last-child {
+  border-right: none;
+}
+
+.header-menu a:hover {
+  box-shadow: 0 0 3px rgba(255,255,255,0.5);
+}
+
+.header-menu a:active {
+  background: rgba(0,0,0,0.5);
+}
+
+@media (min-width: 1150px) {
+  .header-menu {
+    float: right;
+  }
 }
 
 /*INDEX*/
 
 section {
-  padding-top: 4em;
-  padding-bottom: 5em;
+  padding: 70px 0 35px;
+  border-bottom: 1px solid black;
 }
 
 h2 {
-  margin: 0;
-  margin-bottom: 1em;
+  position: relative;
+  margin: 0 0 35px;
+  padding: 0;
   border-bottom: 1px solid black;
-  font-size: 2.8em;
-  line-height: 1.2em;
-  font-weight: normal;
-  text-align: center;
+  font-family: "Comfortaa", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+h2::before {
+  content:"";
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  border-bottom: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .motto {
-  position: relative;
-  padding-top: 30em;
-  padding-bottom: 7.7em;
-  border-bottom: 1px solid black;
-  box-shadow: 0 0.28em 0.72em rgba(0,0,0,0.36);
+  padding-top: 125px;
+  box-shadow: 0 5px 13px rgba(0,0,0,0.3);
   /*ОФОРМЛЕНИЕ*/
-  background: url(../img/background-1.png) no-repeat 50% 50% fixed;
+  background: rgba(255,255,255,0.5) url(../img/background-1.jpg) no-repeat 50% 50% fixed;
+  background-blend-mode: color;
   background-size: cover;
 }
 
 .motto b {
   display: block;
-  font-size: 3.6em;
-  line-height: 1em;
-  font-weight: normal;
+  margin-bottom: 30px;
+  width: 100%;
+  font-family: "Comfortaa", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
   text-align: center;
+  color: black;
   background: rgba(255, 255, 255, 0.3);
 }
 
-.motto::after {
-  content:"";
-  position: absolute;
-  bottom: -0.28em;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
-  width: 3em;
-  height: 3em;
-  background: url(../img/018-yoga-silhouette.png) no-repeat;
-  background-size: cover;
+.motto-right {
+  float: right;
+}
+
+.motto-left {
+  float: left;
 }
 
 .space {
   background: white;
 }
 
-.space h2 {
-  position: relative;
+.space h2::before {
+  background-image: url(../img/019-yoga-silhouette.svg);
+  background-position: 0 8px;
 }
 
-.space h2::before {
-  content: "";
-  position: absolute;
-  bottom: -0.33em;
-  left: 0;
-  width: 1.4em;
-  height: 1.4em;
-  background: url(../img/019-yoga-silhouette.png) no-repeat;
-  background-size: cover;
+.space-content {
+  margin: 0 0 35px;
+  padding: 0;
+  text-align: center;
 }
 
 .space-gallery {
-  margin-left: -30px;
+  margin-bottom: -10px;
+  font-size: 0;
+  line-height: 0;
   text-align: center;
 }
 
@@ -165,38 +317,31 @@ h2 {
   display: inline-block;
   vertical-align: top;
   width: 300px;
-  overflow: hidden;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   outline: 1px solid white;
-  box-shadow: 0 0 0.72em rgba(50,50,50,0.5);
-}
-
-.space p {
-  margin-top: 1em;
+  box-shadow: 0 0 5px rgba(50,50,50,0.5);
 }
 
 .schedule {
   /*ОФОРМЛЕНИЕ*/
-  background: url(../img/background-3.png) no-repeat 50% 50% fixed;
+  color: black;
+  background: rgba(255,255,255,0.3) url(../img/background-2.jpg) no-repeat 50% 50% fixed;
+  background-blend-mode: color;
   background-size: cover;
-  border-bottom: 1px solid black;
-  box-shadow: 0 0.28em 0.72em rgba(0,0,0,0.36);
+  box-shadow: 0 5px 13px rgba(0,0,0,0.3);
 }
 
-.schedule h2 {
-  color: white;
-  background: rgba(255,255,255,0.15);
-  border: none;
+.schedule h2::before {
+  background-image: url(../img/029-yoga-silhouette.svg);
+  background-position: 0 2px;
 }
 
 .schedule-changes {
-  margin: 0;
-  margin-bottom: 3em;
-  padding: 0;
+  margin: 0 0 35px;
+  padding: 5px;
+  text-align: center;
   color: white;
   background: rgba(241,90,36,0.43);
-  text-align: center;
 }
 
 .schedule-days {
@@ -213,35 +358,44 @@ h2 {
 .schedule-days label {
   display: block;
   margin-top: 1px;
-  font-size: 1.3em;
-  line-height: 1.71em;
-  color: white;
+  padding: 5px;
+  border: 1px solid white;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid white;
-  background: rgba(127,127,127,0.15);
+  background: rgba(125,125,125,0.15);
   cursor: pointer;
 }
 
 .schedule-weekend label {
-  background: rgba(241,90,36,0.15);
+  background: rgba(240,90,36,0.15);
 }
 
 .schedule-days label:hover {
-  background: rgba(127,127,127,0.8);
-  transition: all 1s ease 0.1s;
+  background: rgba(125,125,125,0.8);
+  transition: all 2s ease 0.1s;
 }
 
 .schedule-weekend label:hover {
-  background: rgba(241,90,36,0.8);
-  transition: all 1s ease 0.1s;
+  background: rgba(240,90,36,0.8);
+  transition: all 2s ease 0.1s;
+}
+
+input:checked + label {
+  background: rgba(125,125,125,0.8);
+  transition: all 2s ease 0.1s;
+}
+
+.schedule-weekend input:checked + label {
+  background: rgba(240,90,36,0.8);
+  transition: all 2s ease 0.1s;
 }
 
 .schedule-day {
   display: none;
-  padding-top: 1em;
-  padding-bottom: 1.66em;
-  background: rgba(255,255,255,0.33);
+  padding: 16px 0 19px;
+  border-collapse: collapse;
+  font-size: 12px;
+  background: rgba(255,255,255,0.5);
 }
 
 input:checked ~ .schedule-day {
@@ -249,91 +403,78 @@ input:checked ~ .schedule-day {
   width: 100%;
 }
 
-input:checked + label {
-  background: rgba(127,127,127,0.8);
-  transition: all 1s ease 0.1s;
+.schedule-day td {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
 }
 
-.schedule-weekend input:checked + label {
-  background: rgba(241,90,36,0.8);
-  transition: all 1s ease 0.1s;
+.schedule-day tr:last-child td {
+  border-bottom: none;
 }
 
 .schedule-day td:first-child {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .schedule-day td:last-child {
-  border-bottom: 1px solid black;
   font-style: italic;
 }
 
 .team {
-  border-bottom: 1px solid black;
-}
-
-.team h2 {
-  position: relative;
+  box-shadow: 0 5px 13px rgba(50,50,50,0.5);
 }
 
 .team h2::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 1.3em;
-  height: 1.3em;
-  background: url(../img/031-yoga-silhouette.png) no-repeat;
-  background-size: cover;
+  background-image: url(../img/033-yoga-silhouette.svg);
+  background-position: 0 2px;
 }
 
 .team-gallery {
-  position: relative;
-  border: 1px solid black;
-  padding-top: 16px;
-  margin-bottom: -0.3em;
+  margin: 0 0 -10px -10px;
+  font-size: 0;
 }
 
 .team-gallery-item {
   display: inline-block;
   vertical-align: top;
-  width: 141px;
-  margin-left: 16px;
-  margin-bottom: 16px;
-  padding-bottom: 8px;
+  width: 145px;
+  margin: 0 0 10px 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  line-height: 19px;
   cursor: pointer;
 }
 
 .team-gallery-item.director {
-  margin-right: 157px;
+  margin-right: 155px;
 }
 
 .team-gallery-item img {
   display: block;
-  width: 100%;
+  width: 145px;
+  height: 145px;
   outline: 1px solid white;
-  box-shadow: 0 0 0.72em rgba(50,50,50,0.5);
+  box-shadow: 0 0 5px rgba(50,50,50,0.5);
 }
 
 .team-gallery-item h3 {
   margin: 0;
-  padding: 0.5em 0;
-  font-weight: normal;
+  padding: 8px 0;
+  font-weight: 400;
   text-align: center;
 }
 
 .team-gallery-item p {
-  margin: 0;
-  margin-top: -0.25em;
+  margin: -4px 0 0;
   padding: 0;
-  font-size: 0.7em;
-  line-height: 1em;
   font-style: italic;
+  font-size: 12px;
+  line-height: 12px;
   text-align: center;
 }
 
 .team-gallery-item:hover {
-  box-shadow: 0 0.28em 0.72em rgba(50,50,50,0.5);
+  box-shadow: 0 5px 10px rgba(50,50,50,0.5);
 }
 
 .team-gallery-item:hover img {
@@ -341,165 +482,175 @@ input:checked + label {
   box-shadow: none;
 }
 
-.team-gallery::after {
-  content: "";
-  position: absolute;
-  bottom: -4.76em;
-  right: 0;
-  width: 3.8em;
-  height: 3.8em;
-  background: url(../img/033-yoga-silhouette.png) no-repeat;
-  background-size: cover;
+@media (min-width: 768px) {
+  .team-gallery-item.director {
+    margin-right: 157px;
+  }
 }
 
 .price {
-  /*ОФОРМЛЕНИЕ*/
-  background: url(../img/background-2.png) no-repeat 50% 50% fixed;
+  padding-top: 35px;
+  background: rgba(255,255,255,0.5) url(../img/background-3.jpg) no-repeat 50% 50% fixed;
+  background-blend-mode: color;
   background-size: cover;
+  box-shadow: 0 5px 13px rgba(0,0,0,0.3);
 }
 
-.price h2 {
-  margin-top: -0.2em;
-  margin-bottom: 3em;
+.price h2::before {
+  content: none;
 }
 
 .instant-visit {
   float: left;
   position: relative;
-  width: 380px;
+  margin-top: 35px;
+  width: 100%;
 }
 
 .instant-visit::before {
   content: "";
   position: absolute;
-  top: -4.5em;
+  top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  width: 3.5em;
-  height: 3.5em;
+  width: 36px;
+  height: 36px;
   border-bottom: 1px solid black;
-  background: url(../img/017-yoga-silhouette.png) no-repeat;
+  background: url(../img/017-yoga-silhouette.svg) no-repeat 0 2px;
   background-size: cover;
-}
-
-.unlimited-visits {
-  float: right;
-  position: relative;
-  width: 25em;
-}
-
-.unlimited-visits::before {
-  content: "";
-  position: absolute;
-  top: -4.5em;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 3.5em;
-  height: 3.5em;
-  border-bottom: 1px solid black;
-  background: url(../img/031-yoga-silhouette.png) no-repeat;
-  background-size: cover;
-}
-
-.price h3 {
-  margin: 0;
-  margin-bottom: 0.6em;
-  padding: 0;
-  text-transform: uppercase;
-  font-size: 1.7em;
-  line-height: 1em;
-  font-weight: normal;
-  text-align: center;
-}
-
-.instant-visit h3 {
-  margin-bottom: 1.24em;
 }
 
 .instant-visit .price-value {
   color: #f15a24;
 }
 
-.price {
-  padding-bottom: 4.4em;
+.unlimited-visits {
+  float: right;
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+}
+
+.unlimited-visits::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
   border-bottom: 1px solid black;
-  box-shadow: 0 0.28em 0.72em rgba(0,0,0,0.36);
+  background: url(../img/031-yoga-silhouette.svg) no-repeat 0 2px;
+  background-size: cover;
+}
+
+.price h3 {
+  position: relative;
+  margin: 0 0 15px;
+  padding: 0;
+  font-family: "Comfortaa", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .price p {
   margin: 0;
   padding: 0;
-  padding-top: 0.18em;
   text-align: center;
 }
 
+.price .currency {
+  font-size: 12px;
+}
+
 .unlimited-visits-price {
-  margin-left: -7em;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .unlimited-visits-price th {
-  font-size: 1em;
-  line-height: 1em;
-  font-weight: normal;
+  font-weight: 400;
+  height: 25px;
+  vertical-align: bottom;
 }
 
 .unlimited-visits-price td {
-  padding: 0 0.17em;
+  text-align: center;
   color: #f15a24;
 }
 
-.unlimited-visits-price td:first-child {
-  color: black;
-  width: 8.4em;
-  text-align: right;
-  padding-right: 0.7em;
+/*
+.contacts {
+  box-shadow: 0 5px 13px rgba(50,50,50,0.3);
+}
+*/
+
+.contacts h2::before {
+  background-image: url(../img/032-yoga-silhouette.svg);
 }
 
-.price .currency {
-  font-size: 1em;
+.contacts-content {
+  margin-bottom: 35px;
+  width: 300px;
+  padding-left: 15px;
+}
+
+.contacts-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-content-left {
+  float: left;
+}
+
+.contacts-content-right {
+  float: right;
 }
 
 .contacts-map {
   float: left;
-  width: 550px;
+  width: 300px;
 }
 
 .contacts-map iframe {
   display: block;
-  width: 100%;
-  height: 350px;
-}
-
-.contacts-description {
-  margin-left: 1.7em;
-  float: left;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 /*FOOTER*/
 
+footer {
+  background: rgba(255,255,255,0.5) url(../img/background-1.jpg) no-repeat 50% 50% fixed;
+  background-blend-mode: color;
+  background-size: cover;
+}
+
 .social {
   position: relative;
-  margin-top: -2em;
-  margin-bottom: 2.8em;
+  margin: 0 0 0 -12px;
+  padding: 20px 0 12px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
 }
 
 .social::before {
   content: "";
   position: absolute;
-  top: -4.28em;
+  top: -36px;
   left: 50%;
   transform: translateX(-50%);
-  width: 3.6em;
-  height: 3.33em;
-  border-bottom: 1px solid black;
-  background: url(../img/001-yoga-silhouette.png) no-repeat;
+  width: 36px;
+  height: 36px;
+  background: url(../img/001-yoga-silhouette.svg) no-repeat;
   background-size: cover;
-}
-
-.social ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
 }
 
 .social li {
@@ -507,23 +658,35 @@ input:checked + label {
   padding: 0;
   display: inline-block;
   vertical-align: top;
-  margin-left: 1em;
+  margin-left: 14px;
 }
 
 .social a {
   display: block;
-  width: 2.5em;
-  height: 2.5em;
+  width: 36px;
+  height: 36px;
 }
 
 .social-vk {
-  background: url(../img/social-vk.png) no-repeat 50% 50%;
+  background: url(../img/social-vk.svg) no-repeat;
   background-size: cover;
 }
 
 .social-fb {
-  background: url(../img/social-fb.png) no-repeat 50% 50%;
+  background: url(../img/social-fb.svg) no-repeat;
   background-size: cover;
+}
+
+.social-ig {
+  background: url(../img/social-ig.svg) no-repeat;
+  background-size: cover;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0 0 14px;
+  text-align: center;
+  color: black;
 }
 
 /*POPUPS*/
@@ -547,82 +710,5 @@ input:checked + label {
   }
   100% {
     transform: translateY(0);
-  }
-}
-
-/*ADAPTIVE*/
-
-@media screen and (max-width: 980px) {
-
-  .hidden-under-980 {
-    display: block;
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-    width: 1px;
-    height: 1px;
-  }
-
-  body {
-    font-size: 16px;
-    line-height: 19px;
-  }
-
-  .container {
-    width: 600px;
-  }
-
-  .container-narrow {
-    width: 600px;
-  }
-
-  .space-gallery {
-    margin-left: -30px;
-  }
-
-  .space-gallery img {
-    width: 180px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-
-  .team-gallery {
-    padding-top: 12px;
-  }
-
-  .team-gallery-item {
-    display: inline-block;
-    vertical-align: top;
-    width: 135px;
-    margin-left: 12px;
-    margin-bottom: 12px;
-    padding-bottom: 6px;
-    cursor: pointer;
-  }
-
-  .instant-visit {
-    float: none;
-    margin: 0 auto 130px;
-  }
-
-  .instant-visit h3 {
-    margin-bottom: 1em;
-  }
-
-  .unlimited-visits {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .contacts-map {
-    float: none;
-    width: 100%;
-    margin-bottom: 25px;
-  }
-
-  .contacts-description {
-    float: none;
-    margin-left: 0;
-    margin-bottom: 40px;
   }
 }

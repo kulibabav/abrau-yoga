@@ -12,86 +12,94 @@
   <body>
     <header>
       <hgroup class="header-contacts">
-        <div class="container clearfix">
-          <div class="header-address">
-            г. Москва, ул. Петровка, д. 26, стр. 2, подъезд 9
-          </div>
+        <div class="clearfix">
           <div class="header-phone">
-            +7 495 123-34-56
+            +7 495 623-45-28
+          </div>
+          <div class="header-address">
+            г. Москва, ул. Петровка, д. 26, стр. 2, под. 9
           </div>
         </div>
       </hgroup>
       <hgroup class="header-nav">
-        <div class="container clearfix">
-          <h1 class="header-logo">
-            АБРАУ-YOGA
-          </h1>
+        <div class="clearfix">
+          <a class="header-logo" href="#">
+            <h1 >
+              АБРАУ-YOGA
+            </h1>
+          </a>
           <nav class="header-menu">
+            <a href="#space">Пространство</a>
+            <a href="#space">Расписание</a>
+            <a href="#space">Наша команда</a>
+            <a href="#space">Цены</a>
+            <a href="#space">Контакты</a>
           </nav>
         </div>
       </hgroup>
     </header>
     <main>
       <section class="motto">
-        <b class="container">АБРАУ-YOGA это&nbsp;ПУТЬ</b>
+        <div class="container clearfix">
+          <b class="motto-right">Развитие</b>
+          <b class="motto-center clear-both">Здоровье</b>
+          <b class="motto-left">Ясность</b>
+        </div>
       </section>
       <section class="space">
         <div class="container">
-          <h2>- Пространство -</h2>
-          <div class="space-gallery">
-            <img src="img/red-hall.jpg" alt="Красный зал"
-            ><img src="img/mirror-hall.jpg" alt="Зеркальный зал"
-            ><img src="img/massage-room.jpg" alt="Массажная комната">
+          <h2>Пространство</h2>
+          <div class="space-content hide-768">
+            <p>
+              Уютная чайная для проведения семинаров, 4 комфортных зала для занятий йогой, массажный кабинет.
+            </p>
           </div>
-          <p>
-            Наполняйтесь!
-            <br>Это открытое к экспериментам пространство для развивающихся и практикующих различные виды йоги людей. Место, где все способствует обретению сил, энергии, и знаний.
-          </p>
-          <p>
-            Исследуйте!
-            <br>Здесь возможно подобрать себе йогу на любой вкус, попробовать самые необычные виды современных практик и методик работы с телом, душой и тонкими телами.
-          </p>
-          <p>
-            Познавайте!
-            <br>Наша чайная — это пространство неожиданных встреч и случайных совпадений, где можно встретить своего учителя, духовного наставника и получить ответы на глубинные вопросы бытия.
-          </p>
+          <div class="space-gallery">
+            <img src="img/red-hall-big.jpg" alt="Красный зал">
+            <img src="img/mirror-hall-big.jpg" alt="Зеркальный зал">
+            <img src="img/massage-room-big.jpg" alt="Массажная комната">
+          </div>
+          <div class="space-content hide-320">
+            <p>
+              Уютная чайная для проведения семинаров, 4 комфортных зала для занятий йогой, массажный кабинет.
+            </p>
+          </div>
         </div>
       </section>
       <section class="schedule">
         <div class="container">
-          <h2>- Расписание -</h2>
+          <h2>Расписание</h2>
           <p class="schedule-changes">
-            ВНИМАНИЕ! Изменения в расписании
-            <br>в ЧЕТВЕРГ класс ЧАС-СИЛЫ
-            <br>вместо Алены Королевой будет вести Алексей Королев</p>
+            Всё по расписанию
+          </p>
           <ul class="schedule-days">
             <li>
               <input class="hidden" type="checkbox" id="schedule-monday">
               <label for="schedule-monday">Понедельник</label>
               <table class="schedule-day">
                 <tr>
-                  <td>07:00 &ndash; 08:30</td>
+                  <td>07:00&nbsp;&ndash; 08:30</td>
                   <td>Елена Лускинова</td>
                   <td>Хатха-йога</td>
-                  <td>По записи</td>
+                  <td>по записи</td>
                 </tr>
                 <tr>
-                  <td>13:00 &ndash; 14:00</td>
+                  <td>13:00&nbsp;&ndash; 14:00</td>
                   <td>Алёна Королёва</td>
                   <td>Час силы</td>
-                  <td>Для всех желающих</td>
+                  <td>для всех желающих</td>
                 </tr>
                 <tr>
-                  <td>18:00 &ndash; 19:00</td>
+                  <td>18:00&nbsp;&ndash; 19:00</td>
                   <td>Ольга Ма</td>
                   <td>Кундалини йога</td>
-                  <td>Для всех</td>
+                  <td>для всех желающих</td>
                 </tr>
                 <tr>
-                  <td>18:00 &ndash; 21:00</td>
-                  <td>Татьяна Филлипова</td>
+                  <td>18:00&nbsp;&ndash; 21:00</td>
+                  <td>Аня Ян</td>
                   <td>Аштанга-Виньяса</td>
-                  <td>Мастер-класс</td>
+                  <td>майсор-класс</td>
                 </tr>
               </table>
             </li>
@@ -100,28 +108,28 @@
               <label for="schedule-tuesday">Вторник</label>
               <table class="schedule-day">
                 <tr>
-                  <td>07:00 &ndash; 08:30</td>
-                  <td>Елена Лускинова</td>
-                  <td>Хатха-йога</td>
-                  <td>По записи</td>
-                </tr>
-                <tr>
-                  <td>13:00 &ndash; 14:00</td>
-                  <td>Алёна Королёва</td>
-                  <td>Час силы</td>
-                  <td>Для всех желающих</td>
-                </tr>
-                <tr>
-                  <td>18:00 &ndash; 19:00</td>
-                  <td>Ольга Ма</td>
-                  <td>Кундалини йога</td>
-                  <td>Для всех</td>
-                </tr>
-                <tr>
-                  <td>18:00 &ndash; 21:00</td>
+                  <td>13:00&nbsp;&ndash; 14:00</td>
                   <td>Татьяна Филлипова</td>
-                  <td>Аштанга-Виньяса</td>
-                  <td>Мастер-класс</td>
+                  <td>Час силы</td>
+                  <td>для всех желающих</td>
+                </tr>
+                <tr>
+                  <td>19:00&nbsp;&ndash; 20:30</td>
+                  <td>Алёна Королёва</td>
+                  <td>Хатха-йога</td>
+                  <td>женские практики</td>
+                </tr>
+                <tr>
+                  <td>19:30&nbsp;&ndash; 21:00</td>
+                  <td>Камиль Хуснуллин</td>
+                  <td>Йога 23</td>
+                  <td>для всех желающих</td>
+                </tr>
+                <tr>
+                  <td>20:30&nbsp;&ndash; 22:00</td>
+                  <td>Илья Ананьев</td>
+                  <td>Йогатерапия</td>
+                  <td>для всех желающих</td>
                 </tr>
               </table>
             </li>
@@ -130,28 +138,28 @@
               <label for="schedule-wednesday">Среда</label>
               <table class="schedule-day">
                 <tr>
-                  <td>07:00 &ndash; 08:30</td>
+                  <td>07:00&nbsp;&ndash; 08:30</td>
                   <td>Елена Лускинова</td>
                   <td>Хатха-йога</td>
-                  <td>По записи</td>
+                  <td>по записи</td>
                 </tr>
                 <tr>
-                  <td>13:00 &ndash; 14:00</td>
+                  <td>08:30&nbsp;&ndash; 10:00</td>
+                  <td>Камиль Хуснуллин</td>
+                  <td>Йога 23</td>
+                  <td>по записи, от&nbsp;5&nbsp;чел.</td>
+                </tr>
+                <tr>
+                  <td>13:00&nbsp;&ndash; 14:00</td>
                   <td>Алёна Королёва</td>
                   <td>Час силы</td>
-                  <td>Для всех желающих</td>
+                  <td>для всех желающих</td>
                 </tr>
                 <tr>
-                  <td>18:00 &ndash; 19:00</td>
-                  <td>Ольга Ма</td>
-                  <td>Кундалини йога</td>
-                  <td>Для всех</td>
-                </tr>
-                <tr>
-                  <td>18:00 &ndash; 21:00</td>
-                  <td>Татьяна Филлипова</td>
-                  <td>Аштанга-Виньяса</td>
-                  <td>Мастер-класс</td>
+                  <td>19:00&nbsp;&ndash; 20:30</td>
+                  <td>Аня Сергеева</td>
+                  <td>Хатха-йога</td>
+                  <td>для всех желающих</td>
                 </tr>
               </table>
             </li>
@@ -160,28 +168,34 @@
               <label for="schedule-thursday">Четверг</label>
               <table class="schedule-day">
                 <tr>
-                  <td>07:00 &ndash; 08:30</td>
-                  <td>Елена Лускинова</td>
-                  <td>Хатха-йога</td>
-                  <td>По записи</td>
-                </tr>
-                <tr>
-                  <td>13:00 &ndash; 14:00</td>
-                  <td>Алёна Королёва</td>
+                  <td>13:00&nbsp;&ndash; 14:00</td>
+                  <td>Алиса Шефтелевич</td>
                   <td>Час силы</td>
-                  <td>Для всех желающих</td>
+                  <td>для всех желающих</td>
                 </tr>
                 <tr>
-                  <td>18:00 &ndash; 19:00</td>
-                  <td>Ольга Ма</td>
-                  <td>Кундалини йога</td>
-                  <td>Для всех</td>
-                </tr>
-                <tr>
-                  <td>18:00 &ndash; 21:00</td>
-                  <td>Татьяна Филлипова</td>
+                  <td>18:00&nbsp;&ndash; 21:00</td>
+                  <td>Аня Ян</td>
                   <td>Аштанга-Виньяса</td>
-                  <td>Мастер-класс</td>
+                  <td>майсор-класс</td>
+                </tr>
+                <tr>
+                  <td>19:00&nbsp;&ndash; 20:30</td>
+                  <td>Алёна Королёва</td>
+                  <td>Хатха-йога</td>
+                  <td>женские практики</td>
+                </tr>
+                <tr>
+                  <td>19:30&nbsp;&ndash; 21:00</td>
+                  <td>Камиль Хуснуллин</td>
+                  <td>Йога 23</td>
+                  <td>для всех желающих</td>
+                </tr>
+                <tr>
+                  <td>20:30&nbsp;&ndash; 22:00</td>
+                  <td>Илья Ананьев</td>
+                  <td>Йогатерапия</td>
+                  <td>для всех желающих</td>
                 </tr>
               </table>
             </li>
@@ -190,28 +204,16 @@
               <label for="schedule-friday">Пятница</label>
               <table class="schedule-day">
                 <tr>
-                  <td>07:00 &ndash; 08:30</td>
-                  <td>Елена Лускинова</td>
-                  <td>Хатха-йога</td>
-                  <td>По записи</td>
-                </tr>
-                <tr>
-                  <td>13:00 &ndash; 14:00</td>
-                  <td>Алёна Королёва</td>
-                  <td>Час силы</td>
-                  <td>Для всех желающих</td>
-                </tr>
-                <tr>
-                  <td>18:00 &ndash; 19:00</td>
-                  <td>Ольга Ма</td>
-                  <td>Кундалини йога</td>
-                  <td>Для всех</td>
-                </tr>
-                <tr>
-                  <td>18:00 &ndash; 21:00</td>
+                  <td>13:00&nbsp;&ndash; 14:30</td>
                   <td>Татьяна Филлипова</td>
-                  <td>Аштанга-Виньяса</td>
-                  <td>Мастер-класс</td>
+                  <td>Час силы</td>
+                  <td>для всех желающих</td>
+                </tr>
+                <tr>
+                  <td>17:00&nbsp;&ndash; 18:30</td>
+                  <td>Лусникова Елена</td>
+                  <td>Йога Лакулиш (Хатха)</td>
+                  <td>для всех желающих</td>
                 </tr>
               </table>
             </li>
@@ -220,28 +222,10 @@
               <label for="schedule-saturday">Суббота</label>
               <table class="schedule-day">
                 <tr>
-                  <td>07:00 &ndash; 08:30</td>
-                  <td>Елена Лускинова</td>
-                  <td>Хатха-йога</td>
-                  <td>По записи</td>
-                </tr>
-                <tr>
-                  <td>13:00 &ndash; 14:00</td>
-                  <td>Алёна Королёва</td>
-                  <td>Час силы</td>
-                  <td>Для всех желающих</td>
-                </tr>
-                <tr>
-                  <td>18:00 &ndash; 19:00</td>
-                  <td>Ольга Ма</td>
-                  <td>Кундалини йога</td>
-                  <td>Для всех</td>
-                </tr>
-                <tr>
-                  <td>18:00 &ndash; 21:00</td>
-                  <td>Татьяна Филлипова</td>
-                  <td>Аштанга-Виньяса</td>
-                  <td>Мастер-класс</td>
+                  <td>12:30&nbsp;&ndash; 14:00</td>
+                  <td>Камиль Хуснуллин</td>
+                  <td>Y23 выходного дня</td>
+                  <td>для всех желающих</td>
                 </tr>
               </table>
             </li>
@@ -250,28 +234,28 @@
               <label for="schedule-sunday">Воскресенье</label>
               <table class="schedule-day">
                 <tr>
-                  <td>07:00 &ndash; 08:30</td>
-                  <td>Елена Лускинова</td>
+                  <td>12:00&nbsp;&ndash; 13:00</td>
+                  <td>Евгений Азимов</td>
+                  <td>Capoeira</td>
+                  <td>детская группа</td>
+                </tr>
+                <tr>
+                  <td>12:00&nbsp;&ndash; 13:30</td>
+                  <td>Аня Сергеева</td>
                   <td>Хатха-йога</td>
-                  <td>По записи</td>
+                  <td>для всех желающих</td>
                 </tr>
                 <tr>
-                  <td>13:00 &ndash; 14:00</td>
-                  <td>Алёна Королёва</td>
-                  <td>Час силы</td>
-                  <td>Для всех желающих</td>
+                  <td>19:30&nbsp;&ndash; 21:00</td>
+                  <td>Светлана Кострыця</td>
+                  <td>Акхила-йога</td>
+                  <td>для всех желающих</td>
                 </tr>
                 <tr>
-                  <td>18:00 &ndash; 19:00</td>
-                  <td>Ольга Ма</td>
-                  <td>Кундалини йога</td>
-                  <td>Для всех</td>
-                </tr>
-                <tr>
-                  <td>18:00 &ndash; 21:00</td>
-                  <td>Татьяна Филлипова</td>
-                  <td>Аштанга-Виньяса</td>
-                  <td>Мастер-класс</td>
+                  <td>13:30&nbsp;&ndash; 15:00</td>
+                  <td>Евгений Азимов</td>
+                  <td>Capoeira</td>
+                  <td>для всех желающих</td>
                 </tr>
               </table>
             </li>
@@ -280,65 +264,78 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2>- Наша команда -</h2>
+          <h2>Наша команда</h2>
           <div class="team-gallery">
             <div class="team-gallery-indent">
               <div class="team-gallery-item director">
                 <img src="img/mizilin.jpg">
                 <h3>Виктор Мизилин</h3>
                 <p>Директор клуба</p>
-              </div><div class="team-gallery-item admin">
+              </div>
+              <div class="team-gallery-item admin">
                 <img src="img/yakovleva.jpg">
                 <h3>Арина Яковлева</h3>
                 <p>Администратор</p>
-              </div><div class="team-gallery-item admin">
+              </div>
+              <div class="team-gallery-item admin">
                 <img src="img/aliev.jpg">
-                <h3>Галиб<br>Алиев</h3>
+                <h3>Галиб Алиев</h3>
                 <p>Администратор</p>
-              </div><br><div class="team-gallery-item">
+              </div>
+              <div class="team-gallery-item">
                 <img src="img/sergeeva.jpg">
-                <h3>Аня<br>Сергеева</h3>
-                <p>Йог</p>
-              </div><div class="team-gallery-item">
+                <h3>Аня Сергеева</h3>
+                <p>Хатха-йога</p>
+              </div>
+              <div class="team-gallery-item">
                 <img src="img/husnullin.jpg">
                 <h3>Камиль Хуснуллин</h3>
-                <p>Йог</p>
-              </div><div class="team-gallery-item">
+                <p>Йога 23</p>
+              </div>
+              <div class="team-gallery-item">
                 <img src="img/yan.jpg">
-                <h3>Аня<br>Ян</h3>
-                <p>Йог</p>
-              </div><div class="team-gallery-item">
+                <h3>Аня Ян</h3>
+                <p>Аштанга-виньяса</p>
+              </div>
+              <div class="team-gallery-item">
                 <img src="img/ananyev.jpg">
-                <h3>Илья<br>Ананьев</h3>
-                <p>Йог</p>
-              </div><div class="team-gallery-item">
-                <img src="img/fillipova.png">
-                <h3>Татьяна Филлипова</h3>
-                <p>Йог</p>
-              </div><div class="team-gallery-item">
-                <img src="img/lusnikova.jpg">
-                <h3>Елена Лусникова</h3>
-                <p>Йог</p>
-              </div><div class="team-gallery-item">
+                <h3>Илья Ананьев</h3>
+                <p>Йога-терапия</p>
+              </div>
+              <div class="team-gallery-item">
                 <img src="img/korolyova.jpg">
                 <h3>Алёна Королёва</h3>
-                <p>Йог</p>
-              </div><div class="team-gallery-item">
+                <p>Хатха-йога</p>
+              </div>
+              <div class="team-gallery-item">
                 <img src="img/sheftelevich.jpg">
                 <h3>Алиса Шефтелевич</h3>
-                <p>Йог</p>
-              </div><div class="team-gallery-item">
+                <p>---</p>
+              </div>
+              <div class="team-gallery-item">
                 <img src="img/azimov.jpg">
                 <h3>Евгений Азимов</h3>
-                <p>Йог</p>
-              </div><div class="team-gallery-item">
+                <p>Капоэйра</p>
+              </div>
+              <div class="team-gallery-item">
                 <img src="img/berger.jpg">
                 <h3>Дмитрий Бергер</h3>
-                <p>Йог</p>
-              </div><div class="team-gallery-item">
+                <p>---</p>
+              </div>
+              <div class="team-gallery-item">
+                <img src="img/lusnikova.jpg">
+                <h3>Елена Лусникова</h3>
+                <p>Лакулиш-йога</p>
+              </div>
+              <div class="team-gallery-item">
+                <img src="img/fillipova.png">
+                <h3>Татьяна Филлипова</h3>
+                <p>Хатха-йога</p>
+              </div>
+              <div class="team-gallery-item">
                 <img src="img/kostryca.jpg">
                 <h3>Светлана Кострыца</h3>
-                <p>Йог</p>
+                <p>Акхила-йога</p>
               </div>
             </div>
           </div>
@@ -346,7 +343,7 @@
       </section>
       <section class="price">
         <div class="container clearfix">
-          <h2>- Цены -</h2>
+          <h2>Цены</h2>
           <div class="instant-visit">
             <h3>Одинарный абонемент</h3>
             <p>РАЗОВОЕ посещение класса &ndash; <span class="price-value">800 <span class="currency">руб.</span></span></p>
@@ -356,21 +353,27 @@
             <h3>Безлимитные абонементы</h3>
             <table class="unlimited-visits-price">
               <tr>
-                <td></td>
+                <th class="hide-320"></th>
                 <th>1 мес.</th>
                 <th>3 мес.</th>
                 <th>6 мес.</th>
                 <th>1 год</th>
               </tr>
+              <tr class="hide-768 hide-1150">
+                <th colspan="5">будни до 18:00</td>
+              </tr>
               <tr>
-                <td>будни до 18:00</td>
+                <th class="hide-320">будни до 18:00</td>
                 <td>7 600 <span class="currency">руб.</span></td>
                 <td>7 600 <span class="currency">руб.</span></td>
                 <td>7 600 <span class="currency">руб.</span></td>
                 <td>7 600 <span class="currency">руб.</span></td>
               </tr>
+              <tr class="hide-768 hide-1150">
+                <th colspan="5">без ограничений</td>
+              </tr>
               <tr>
-                <td>без ограничений</td>
+                <td class="hide-320">без ограничений</td>
                 <td>7 600 <span class="currency">руб.</span></td>
                 <td>7 600 <span class="currency">руб.</span></td>
                 <td>7 600 <span class="currency">руб.</span></td>
@@ -382,39 +385,42 @@
       </section>
       <section class="contacts">
         <div class="container clearfix">
-          <h2>- Контакты -</h2>
-          <div class="contacts-map">
-            <iframe frameborder="0" src="https://yandex.ru/map-widget/v1/-/CBQJfRrF-B"></iframe>
-            <p class="hidden-under-980">
-              Как добраться до клуба "АБРАУ-ЙОГА"
+          <h2>Контакты</h2>
+          <div class="contacts-content contacts-left">
+            <p>
+              Клуб "АБРАУ-ЙОГА"
+              <br>г. Москва, ул. Петровка,
+              <br>д. 26, стр. 2, подъезд 9
+              <br>yogabrau@gmail.com
+              <br>8 (495) 623-45-28
+              <br>8 (926) 662-52-83
             </p>
           </div>
-          <div class="contacts-description">
+          <div class="contacts-content contacts-right">
             <p>
-              Клуб "АБРАУ-ЙОГА".
+              Ретритный центр "АБРАУ-ДЮРСО"
+              <br>Краснодарский край, г. Новороссийск,
+              <br>с. Абрау-Дюрсо, ул. Промышленная, д. 19
+              <br>8 (800) 100-9-100
+              <br>8 (962) 859-22-44
             </p>
-            <p>
-              8-495-751-23-23
-              <br>8-495-456-45-34
-              <br>г. Москва, ул. Петровка 26, стр. 2, подъезд 9.
-              <br>Ретритный центр "АБРАУ-ДЮРСО".
-            </p>
-            <p>
-              8-495-456-45-34
-              <br>г. Москва, ул. Петровка 26, стр. 2, подъезд 9
-            </p>
+          </div>
+          <div class="contacts-map">
+            <iframe frameborder="0" src="https://yandex.ru/map-widget/v1/-/CBQJfRrF-B"></iframe>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="social container">
-        <ul>
-          <li class="social-vk"><a href=""></a>
-          </li><li class="social-fb"><a href=""></a>
-          </li><li class="social-vk"><a href=""></a>
-          </li><li class="social-fb"><a href=""></a></li>
+      <div class="container">
+        <ul class="social">
+          <li class="social-vk"><a href="https://vk.com/yogabrau">VK</a></li>
+          <li class="social-fb"><a href="https://www.facebook.com/yogabrau">Facebook</a></li>
+          <li class="social-ig"><a href="https://www.instagram.com/yogabrau/">Instagram</a></li>
         </ul>
+        <p class="copyright">
+          &copy; abrau-yoga.ru, 2017 г.
+        </p>
       </div>
     </footer>
   </body>
