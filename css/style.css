@@ -260,12 +260,12 @@ h2::before {
 }
 
 .motto {
-  padding-top: 125px;
-  box-shadow: 0 5px 13px rgba(0,0,0,0.3);
+  padding: 125px 0 15px;
   /*ОФОРМЛЕНИЕ*/
   background: rgba(255,255,255,0.5) url(../img/background-1.jpg) no-repeat 50% 50% fixed;
   background-blend-mode: color;
   background-size: cover;
+  box-shadow: 0 5px 13px rgba(0,0,0,0.3);
 }
 
 .motto b {
@@ -292,7 +292,11 @@ h2::before {
 }
 
 .space {
-  background: white;
+  padding-top: 60px;
+}
+
+.space h2 {
+  margin-bottom: 30px;
 }
 
 .space h2::before {
@@ -301,7 +305,7 @@ h2::before {
 }
 
 .space-content {
-  margin: 0 0 35px;
+  margin: 0 0 30px;
   padding: 0;
   text-align: center;
 }
@@ -317,7 +321,7 @@ h2::before {
   display: inline-block;
   vertical-align: top;
   width: 300px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   outline: 1px solid white;
   box-shadow: 0 0 5px rgba(50,50,50,0.5);
 }
@@ -500,6 +504,29 @@ input:checked ~ .schedule-day {
   content: none;
 }
 
+.price h3 {
+  position: relative;
+  margin: 0 0 15px;
+  padding: 0;
+  font-family: "Comfortaa", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.price p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.price .currency {
+  font-size: 12px;
+}
+
 .instant-visit {
   float: left;
   position: relative;
@@ -544,27 +571,8 @@ input:checked ~ .schedule-day {
   background-size: cover;
 }
 
-.price h3 {
-  position: relative;
-  margin: 0 0 15px;
-  padding: 0;
-  font-family: "Comfortaa", "Calibri", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.price p {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.price .currency {
-  font-size: 12px;
+.unlimited-visits h3 {
+  margin-bottom: 8px;
 }
 
 .unlimited-visits-price {
