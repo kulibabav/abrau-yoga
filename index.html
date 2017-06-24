@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>АБРАУ-YOGA</title>
   </head>
-  <body>
+  <body id="home">
     <header>
       <hgroup class="header-contacts">
         <div class="container clearfix">
@@ -22,17 +22,17 @@
       </hgroup>
       <hgroup class="header-nav">
         <div class="container clearfix">
-          <a class="header-logo" href="#">
+          <a class="header-logo" href="#home">
             <h1 >
               АБРАУ-YOGA
             </h1>
           </a>
           <nav class="header-menu">
             <a href="#space">Пространство</a>
-            <a href="#space">Расписание</a>
-            <a href="#space">Наша команда</a>
-            <a href="#space">Цены</a>
-            <a href="#space">Контакты</a>
+            <a href="#schedule">Расписание</a>
+            <a href="#team">Наша команда</a>
+            <a href="#price">Цены</a>
+            <a href="#contacts">Контакты</a>
           </nav>
         </div>
       </hgroup>
@@ -45,7 +45,7 @@
           <b class="motto-left">Ясность</b>
         </div>
       </section>
-      <section class="space">
+      <section class="space" id="space">
         <div class="container">
           <h2>Пространство</h2>
           <div class="space-content hide-1150">
@@ -65,7 +65,7 @@
           </div>
         </div>
       </section>
-      <section class="schedule">
+      <section class="schedule" id="schedule">
         <div class="container">
           <h2>Расписание</h2>
           <p class="schedule-changes">
@@ -261,7 +261,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team" id="team">
         <div class="container">
           <h2>Наша команда</h2>
           <div class="team-content">
@@ -347,7 +347,7 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <div class="container clearfix">
           <h2>Цены</h2>
           <div class="instant-visit">
@@ -389,7 +389,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container clearfix">
           <h2>Контакты</h2>
           <div class="contacts-content">
@@ -428,5 +428,7 @@
         </p>
       </div>
     </footer>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
