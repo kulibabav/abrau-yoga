@@ -137,7 +137,7 @@ header {
   background: rgba(255,255,255,0.9);
 }
 
-@media (min-width: 768) {
+@media (min-width: 768px) {
 
   .header-contacts {
     font-size: 16px;
@@ -165,6 +165,13 @@ header {
 
 .header-logo {
   display: block;
+  padding: 5px;
+}
+
+@media (min-width: 1150px) {
+  .header-logo {
+    float: left;
+  }
 }
 
 .header-logo h1 {
@@ -181,10 +188,6 @@ header {
 }
 
 @media (min-width: 768px) {
-  .header-menu {
-    float: left;
-  }
-
   .header-logo h1 {
     font-size: 36px;
     line-height: 36px;
@@ -193,8 +196,10 @@ header {
 
 .header-menu {
   display: none;
+  padding: 5px;
   font-size: 0;
   line-height: 0;
+  text-align: center;
 }
 
 .header-menu a {
@@ -212,16 +217,16 @@ header {
 }
 
 .header-menu a:hover {
-  box-shadow: 0 0 3px rgba(255,255,255,0.5);
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
 
 .header-menu a:active {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 768px) {
   .header-menu {
-    float: right;
+    display: block;
   }
 }
 
@@ -259,8 +264,26 @@ h2::before {
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  h2 {
+
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+  }
+
+  h2::before {
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 50px;
+    height: 50px;
+    border-bottom: none;
+  }
+}
+
 .motto {
-  padding: 125px 0 15px;
+  padding: 134px 0 15px;
   /*ОФОРМЛЕНИЕ*/
   background: rgba(255,255,255,0.5) url(../img/background-1.jpg) no-repeat 50% 50% fixed;
   background-blend-mode: color;
@@ -271,6 +294,7 @@ h2::before {
 .motto b {
   display: block;
   margin-bottom: 30px;
+  padding-top: 2px;
   width: 100%;
   font-family: "Comfortaa", "Calibri", sans-serif;
   font-style: normal;
@@ -283,16 +307,31 @@ h2::before {
   background: rgba(255, 255, 255, 0.3);
 }
 
+@media (min-width: 768px) {
+  .motto {
+    padding: 200px 0 30px;
+  }
+
+  .motto b {
+    margin-bottom: 60px;
+    padding: 5px 0 0;
+    width: 60%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
 .motto-right {
   float: right;
 }
 
-.motto-left {
-  float: left;
+.motto-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.space {
-  padding-top: 60px;
+.motto-left {
+  float: left;
 }
 
 .space h2 {
@@ -300,8 +339,10 @@ h2::before {
 }
 
 .space h2::before {
+  width: 45px;
+  height: 45px;
   background-image: url(../img/019-yoga-silhouette.svg);
-  background-position: 0 8px;
+  background-position: 0 10px;
 }
 
 .space-content {
@@ -326,6 +367,30 @@ h2::before {
   box-shadow: 0 0 5px rgba(50,50,50,0.5);
 }
 
+@media (min-width: 768px) {
+
+  .space h2::before {
+    width: 65px;
+    height: 65px;
+    background-position: 0 15px;
+  }
+
+  .space-content {
+    text-align: left;
+  }
+
+  .space-gallery {
+    margin-bottom: -20px;
+    margin-left: -20px;
+  }
+
+  .space-gallery img {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(50,50,50,0.5);
+  }
+}
+
 .schedule {
   /*ОФОРМЛЕНИЕ*/
   color: black;
@@ -337,7 +402,7 @@ h2::before {
 
 .schedule h2::before {
   background-image: url(../img/029-yoga-silhouette.svg);
-  background-position: 0 2px;
+  background-position: 0 1px;
 }
 
 .schedule-changes {
@@ -402,6 +467,12 @@ input:checked + label {
   background: rgba(255,255,255,0.5);
 }
 
+@media (min-width: 768px) {
+  .schedule-day {
+    font-size: 16px;
+  }
+}
+
 input:checked ~ .schedule-day {
   display: table;
   width: 100%;
@@ -430,12 +501,17 @@ input:checked ~ .schedule-day {
 
 .team h2::before {
   background-image: url(../img/033-yoga-silhouette.svg);
-  background-position: 0 2px;
+}
+
+.team-content p {
+  margin: 0 0 35px;
+  padding: 0;
 }
 
 .team-gallery {
   margin: 0 0 -10px -10px;
   font-size: 0;
+  text-align: center;
 }
 
 .team-gallery-item {
@@ -477,6 +553,28 @@ input:checked ~ .schedule-day {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .team-gallery {
+    margin: 0 0 -20px -20px;
+  }
+
+  .team-gallery-item {
+    margin: 0 0 20px 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .team-gallery-item.director {
+    margin-right: 165px;
+  }
+
+  .team-gallery-item p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
 .team-gallery-item:hover {
   box-shadow: 0 5px 10px rgba(50,50,50,0.5);
 }
@@ -484,12 +582,6 @@ input:checked ~ .schedule-day {
 .team-gallery-item:hover img {
   outline: none;
   box-shadow: none;
-}
-
-@media (min-width: 768px) {
-  .team-gallery-item.director {
-    margin-right: 157px;
-  }
 }
 
 .price {
@@ -527,6 +619,17 @@ input:checked ~ .schedule-day {
   font-size: 12px;
 }
 
+@media (min-width: 768px) {
+  .price h3 {
+    margin: 0 0 18px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .price .currency {
+    font-size: 14px;
+  }
+}
+
 .instant-visit {
   float: left;
   position: relative;
@@ -543,7 +646,7 @@ input:checked ~ .schedule-day {
   width: 36px;
   height: 36px;
   border-bottom: 1px solid black;
-  background: url(../img/017-yoga-silhouette.svg) no-repeat 0 2px;
+  background: url(../img/017-yoga-silhouette.svg) no-repeat 0 1px;
   background-size: cover;
 }
 
@@ -567,7 +670,7 @@ input:checked ~ .schedule-day {
   width: 36px;
   height: 36px;
   border-bottom: 1px solid black;
-  background: url(../img/031-yoga-silhouette.svg) no-repeat 0 2px;
+  background: url(../img/031-yoga-silhouette.svg) no-repeat 0 1px;
   background-size: cover;
 }
 
@@ -591,33 +694,62 @@ input:checked ~ .schedule-day {
   color: #f15a24;
 }
 
-/*
-.contacts {
-  box-shadow: 0 5px 13px rgba(50,50,50,0.3);
+@media (min-width: 768px) {
+
+  .price {
+    padding-top: 45px;
+  }
+
+  .price h2::before {
+    content: "";
+    background-image: url(../img/031-yoga-silhouette.svg);
+    background-position: 0 2px;
+  }
+
+  .instant-visit {
+    margin-top: 60px;
+  }
+
+  .instant-visit::before {
+    top: -64px;
+    width: 50px;
+    height: 50px;
+    background-position: 0 0;
+  }
+
+  .unlimited-visits {
+    margin-top: 95px;
+  }
+
+  .unlimited-visits::before {
+    top: -64px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .unlimited-visits-price {
+    width: 550px;
+    margin: 0 auto;
+  }
+
+  .unlimited-visits-price th {
+    vertical-align: baseline;
+  }
 }
-*/
 
 .contacts h2::before {
   background-image: url(../img/032-yoga-silhouette.svg);
 }
 
 .contacts-content {
+  float: left;
   margin-bottom: 35px;
   width: 300px;
-  padding-left: 15px;
 }
 
 .contacts-content p {
   margin: 0;
   padding: 0;
-}
-
-.contacts-content-left {
-  float: left;
-}
-
-.contacts-content-right {
-  float: right;
 }
 
 .contacts-map {
@@ -630,6 +762,22 @@ input:checked ~ .schedule-day {
   width: 300px;
   height: 200px;
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .contacts-content {
+    width: 350px;
+  }
+
+  .contacts-map {
+    width: 700px;
+  }
+
+  .contacts-map iframe {
+    width: 700px;
+    height: 460px;
+    margin-bottom: 35px;
+  }
 }
 
 /*FOOTER*/
@@ -695,6 +843,29 @@ footer {
   padding: 0 0 14px;
   text-align: center;
   color: black;
+}
+
+@media (min-width: 768px) {
+  .social {
+    position: relative;
+    margin: 0 0 0 -14px;
+    padding: 24px 0 14px;
+  }
+
+  .social::before {
+    top: -50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .social a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .copyright {
+    padding: 0 0 16px;
+  }
 }
 
 /*POPUPS*/
