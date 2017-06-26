@@ -459,15 +459,13 @@ h2::before {
   }
 
   .space-gallery {
-    margin-bottom: -20px;
-    margin-left: -30px;
+    margin-bottom: -40px;
+    margin-left: -60px;
   }
 
   .space-gallery img {
-    margin-left: 30px;
-    margin-bottom: 30px;
-    width: 330px;
-    height: 220px;
+    margin-left: 60px;
+    margin-bottom: 50px;
   }
 }
 
@@ -581,6 +579,7 @@ input:checked ~ .schedule-day {
 .schedule-day td {
   border-bottom: 1px solid black;
   vertical-align: bottom;
+  padding-left: 5px;
 }
 
 .schedule-day tr:last-child td {
@@ -593,10 +592,6 @@ input:checked ~ .schedule-day {
 
 .schedule-day td:last-child {
   font-style: italic;
-}
-
-.team {
-  box-shadow: 0 5px 13px rgba(50,50,50,0.5);
 }
 
 .team h2::before {
@@ -915,6 +910,10 @@ input:checked ~ .schedule-day {
   }
 }
 
+.contacts {
+  box-shadow: 0 5px 13px rgba(0,0,0,0.3);
+}
+
 .contacts h2::before {
   background-image: url(../img/032-yoga-silhouette.svg);
 }
@@ -932,14 +931,15 @@ input:checked ~ .schedule-day {
 }
 
 .contacts-map {
+  display: block;
   float: left;
   width: 300px;
+  height: 200px;
+  background: url(../img/map-background-320.png) no-repeat;
 }
 
 .contacts-map iframe {
-  display: block;
-  width: 300px;
-  height: 200px;
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -955,11 +955,14 @@ input:checked ~ .schedule-day {
 
   .contacts-map {
     width: 700px;
+    height: 460px;
   }
 
   .contacts-map iframe {
+    display: block;
     width: 700px;
     height: 460px;
+    background: url(../img/map-background-768.png) no-repeat;
   }
 }
 
@@ -980,12 +983,14 @@ input:checked ~ .schedule-day {
 
   .contacts-map {
     width: 670px;
+    height: 270px;
   }
 
   .contacts-map iframe {
+    margin-bottom: 0;
     width: 670px;
     height: 270px;
-    margin-bottom: 0;
+    background: url(../img/map-background-1150.png) no-repeat;
   }
 }
 
@@ -1113,8 +1118,8 @@ input:checked ~ .schedule-day {
   }
 
   .social::before {
-    left: -50px;
-    top: 14px;
+    left: -60px;
+    top: 10px;
     width: 65px;
     height: 65px;
   }
@@ -1122,8 +1127,8 @@ input:checked ~ .schedule-day {
   .social::after {
     content:"";
     position: absolute;
-    left: -95px;
-    bottom: 20px;
+    left: -60px;
+    top: 73px;
     width: 95px;
     height: 1px;
     background: black;
