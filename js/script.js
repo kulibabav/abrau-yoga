@@ -17,7 +17,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: (target.offset().top - $('header').height())
+          scrollTop: (target.offset().top - $('header').height() - 30)
         }, 1000);
       }
     }
