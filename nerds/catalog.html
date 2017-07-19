@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,400i,700i&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Дизайн-студия NЁRDS &mdash; Магазин готовых шаблонов</title>
+  </head>
+  <body>
+    <header class="catalog-header">
+      <div class="container clearfix">
+        <a class="header-logo" href="index.html">
+          <h1 class="header-logo-text hidden">Нёрдс</h1>
+          <img src="img/header-logo.png" alt="Нёрдс">
+        </a>
+        <nav class="header-menu">
+          <ul>
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="">Клиенты</a></li>
+            <li class="active"><a>Магазин</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <a class="header-cart" href="">Корзина</a>
+        <h1 class="clear-both">Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+    <main>
+      <section class="templates-catalog container clearfix">
+        <form class="catalog-filter" method="get" action="https://echo.htmlacademy.ru/">
+          <fieldset class="template-price-range clearfix">
+            <legend>Стоимость:</legend>
+            <div class="price-range">
+              <div class="range-full">
+                <div class="range-chosen">
+                </div>
+              </div>
+            </div>
+            <div class="left-half">
+              <label for="price-range-from">ОТ</label><input type="text" id="price-range-from" value="0">
+            </div>
+            <div class="right-half">
+              <label for="price-range-to">ДО</label><input type="text" id="price-range-from" value="15 000">
+            </div>
+          </fieldset>
+          <fieldset class="template-layout">
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input class="template-layout-radio hidden" type="radio" name="template-layout" id="template-layout-adaptive" checked>
+                <label for="template-layout-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input class="template-layout-radio hidden" type="radio" name="template-layout" id="template-layout-fixed">
+                <label for="template-layout-fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input class="template-layout-radio hidden" type="radio" name="template-layout" id="template-layout-linger" disabled>
+                <label for="template-layout-linger">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="template-features">
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input class="template-feature-checkbox hidden" type="checkbox" id="template-feature-slider" checked>
+                <label for="template-feature-slider">Слайдер</label>
+              </li>
+              <li>
+                <input class="template-feature-checkbox hidden" type="checkbox" id="template-feature-advantages">
+                <label for="template-feature-advantages">Блок преимуществ</label>
+              </li>
+              <li>
+                <input class="template-feature-checkbox hidden" type="checkbox" id="template-feature-news" checked>
+                <label for="template-feature-news">Новости</label>
+              </li>
+              <li>
+                <input class="template-feature-checkbox hidden" type="checkbox" id="template-feature-gallery">
+                <label for="template-feature-gallery">Галерея</label>
+              </li>
+              <li>
+                <input class="template-feature-checkbox hidden" type="checkbox" id="template-feature-cart" disabled="">
+                <label for="template-feature-cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <input class="btn" type="submit" value="Показать">
+        </form>
+        <div class="catalog-sort clearfix">
+          <span>Сортировать:</span>
+          <div class="sort-parameters">
+            <a class="active">По цене</a>
+            <a href="">По типу</a>
+            <a href="">По названию</a>
+          </div>
+          <div class="sort-directions">
+            <a class="sort-desc active" href="">По убыванию</a>
+            <a class="sort-asc" href="">По возрастанию</a>
+          </div>
+        </div>
+        <div class="catalog-layout">
+          <article class="catalog-item">
+            <div class="window-controls"></div>
+            <img src="img/img-sedona.jpg" width="360" height="576">
+            <div class="catalog-item-actions">
+              <h2>SEDONA</h2>
+              <p>
+                Информационный сайт
+                для&nbsp;туристов
+              </p>
+              <a class="btn" href="">9 900 РУБ.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="window-controls"></div>
+            <img src="img/img-pink.jpg" width="360" height="576">
+            <div class="catalog-item-actions">
+              <h2>PINK APP</h2>
+              <p>
+                Продуктовый лендинг
+                приложения для iOS и Android
+              </p>
+              <a class="btn" href="">9 900 РУБ.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="window-controls"></div>
+            <img src="img/img-barbershop.jpg" width="360" height="576">
+            <div class="catalog-item-actions">
+              <h2>BARBERSHOP</h2>
+              <p>
+                Сайт салона красоты.
+                Для&nbsp;мужчин, да.
+              </p>
+              <a class="btn" href="">9 900 РУБ.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="window-controls"></div>
+            <img src="img/img-mishka.jpg" width="360" height="576">
+            <div class="catalog-item-actions">
+              <h2>MISHKA</h2>
+              <p>
+                Интернет-магазин
+                вязаных&nbsp;игрушек
+              </p>
+              <a class="btn" href="">9 900 РУБ.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="window-controls"></div>
+            <img src="img/img-aplus.jpg" width="360" height="576">
+            <div class="catalog-item-actions">
+              <h2>A PLUS</h2>
+              <p>
+                Лендинг курсов
+                повышения квалификации
+              </p>
+              <a class="btn" href="">9 900 РУБ.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="window-controls"></div>
+            <img src="img/img-kvast.jpg" width="360" height="576">
+            <div class="catalog-item-actions">
+              <h2>КВАСТ</h2>
+              <p>
+                Промо-сайт производителя
+                крафтового кваса
+              </p>
+              <a class="btn" href="">9 900 РУБ.</a>
+            </div>
+          </article>
+        </div>
+        <div class="catalog-paginator">
+          <ul>
+            <li class="catalog-page current"><a>1</a></li>
+            <li class="catalog-page"><a href="">2</a></li>
+            <li class="catalog-page"><a href="">3</a></li>
+            <li class="catalog-page next"><a href="">Следующая</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-contacts">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBQ5rTA0PC" height="410" width = "100%" frameborder="0"></iframe>
+        <div class="container clearfix">
+          <div class="footer-contacts-window">
+            <b>NЁRDS DESIGN STUDIO</b>
+            <p>
+              191186, Санкт-Петербург,
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>
+              тел. +7 (812) 275-75-75
+            </p>
+            <a class="btn" href="write-us.html">Напишите нам</a>
+          </div>
+        </div>
+      </section>
+      <section class="footer-social container clearfix">
+        <div class="footer-social-icons">
+          <a class="footer-vk" href="">VK</a>
+          <a class="footer-fb" href="">facebook</a>
+          <a class="footer-ig" href="">Instagram</a>
+        </div>
+        <div class="footer-social-offer">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>
+            Скидка 10% для друзей из социальных сетей
+          </p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
