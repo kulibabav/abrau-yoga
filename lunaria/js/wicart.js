@@ -287,7 +287,7 @@ function WICard(obj, plugins)
 			bodyHTML +=  this.getForm(arr[f]) + "<br><br>";	
 			
 			};
-		$.post( 'lunaria/php/sendbasket.php?subj=Новый заказ&email=' + $('#email').val(), { "order": bodyHTML }).done(function( data ) {
+		$.post( 'php/sendbasket.php?subj=Новый заказ&email=' + $('#email').val(), { "order": bodyHTML }).done(function( data ) {
 		
             cart.clearBasket();
 		});
