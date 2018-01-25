@@ -288,7 +288,7 @@ function WICard(obj, plugins)
 			
 			};
 		$('.basket_num_buttons').remove();
-		$.post( '../php/sendbasket.php?subj=Новый заказ&email=' + $('#email').val(), { "order": bodyHTML }).done(function( data ) {
+		$.post( 'php/sendbasket.php?subj=Новый заказ&email=' + $('#email').val(), { "order": bodyHTML }).done(function( data ) {
 		
             cart.clearBasket();
 		});

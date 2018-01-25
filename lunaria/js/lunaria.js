@@ -57,7 +57,7 @@ document.querySelectorAll('[data-email-form]').forEach( function(form) {
         event.preventDefault();
         var formData = new FormData(form);
         var XHR = new XMLHttpRequest();
-        XHR.open('POST', '../php/sendmail.php', true);
+        XHR.open('POST', 'php/sendmail.php', true);
         XHR.onload = function() {
             var updateInfo = form.querySelector('[data-form-message]'); 	
             if (XHR.responseText == 'true') {
