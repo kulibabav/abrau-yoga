@@ -79,7 +79,7 @@ h2 label:not(.active) { color: @color-base; &:hover { color: @color-secondary; }
 #section-contacts:checked ~ [data-name="section-contacts"] { display: block; }
 
 @media (max-width: @screen-s-max) {
-    .logo { font-size: @font-xl; }
+    .logo { font-size: @font-xl; line-height: 50px; }
     h1 { font-size: @font-m; }
     h2 { margin-top: 1em; margin-bottom: 1em; font-size: @font-m * 1.5; }
     .header-middle { height: 50px; background-color: @bg-alt; } 
@@ -93,6 +93,7 @@ h2 label:not(.active) { color: @color-base; &:hover { color: @color-secondary; }
     width: 100%;
     height: 100%;
     background-color: @bg-base;
+    overflow: auto;
 }
 
 .payment-methods {
